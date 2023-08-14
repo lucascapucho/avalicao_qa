@@ -1,0 +1,29 @@
+POST - Cadastro da Pessoa
+
+curl --location 'https://learningprime.com.br/api/pessoa' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "nome": "Lucas Capucho de Araujo",
+    "email": "lucascapucho@hotmail.com",
+    "cpf": 42681196809,
+    "dataNascimento": "21/06/1996",
+    "telefone": "15981672737"
+}'
+
+GET - Consultar dados da pessoa cadastrada
+
+curl --location 'https://learningprime.com.br/api/nome/Lucas%20Capucho%20de%20Araujo' \
+--header 'Content-Type: application/json'
+
+PUT - Edição de uma Pessoa Cadastrada
+
+curl --location --request PUT 'https://learningprime.com.br/api/nome/Lucas%20Capucho%20de%20Araujo' \
+--header 'Content-Type: application/json' \
+--data '{
+    "telefone": "(15)981672737"
+}'
+
+DELETE - Deletar pessoa cadastrada
+
+curl --location --request DELETE 'https://learningprime.com.br/api/nome/Lucas%20Capucho%20de%20Araujo' \
+--header 'Content-Type: application/json'

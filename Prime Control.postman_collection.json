@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "d73cd8bb-2968-4e5b-8b7b-a173d7f2ac57",
+		"name": "Prime Control",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21174750"
+	},
+	"item": [
+		{
+			"name": "Consultar dados da pessoa cadastrada",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://learningprime.com.br/api/nome/Lucas%20Capucho%20de%20Araujo",
+					"protocol": "https",
+					"host": [
+						"learningprime",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"nome",
+						"Lucas%20Capucho%20de%20Araujo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar pessoa cadastrada",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://learningprime.com.br/api/nome/Lucas%20Capucho%20de%20Araujo",
+					"protocol": "https",
+					"host": [
+						"learningprime",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"nome",
+						"Lucas%20Capucho%20de%20Araujo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro da Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Lucas Capucho de Araujo\",\r\n    \"email\": \"lucascapucho@hotmail.com\",\r\n    \"cpf\": 42681196809,\r\n    \"dataNascimento\": \"21/06/1996\",\r\n    \"telefone\": \"15981672737\"\r\n}"
+				},
+				"url": {
+					"raw": "https://learningprime.com.br/api/pessoa",
+					"protocol": "https",
+					"host": [
+						"learningprime",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"pessoa"
+					]
+				},
+				"description": "**Método POST:**  \n**URL:** [https://learningprime.com.br/api/pessoa]()  \n**Header:** Content Type: Application/Json  \nO body deve conter ao menos a chave “nome”, devem ser adicionados outros 4 campos referentes a cadastro de pessoas a livre escolha do candidato."
+			},
+			"response": []
+		},
+		{
+			"name": "Edição de uma Pessoa Cadastrada",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"telefone\": \"(15)981672737\"\r\n}"
+				},
+				"url": {
+					"raw": "https://learningprime.com.br/api/nome/Lucas%20Capucho%20de%20Araujo",
+					"protocol": "https",
+					"host": [
+						"learningprime",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"nome",
+						"Lucas%20Capucho%20de%20Araujo"
+					]
+				},
+				"description": "**Método POST:**  \n**URL:** [https://learningprime.com.br/api/pessoa]()  \n**Header:** Content Type: Application/Json  \nO body deve conter ao menos a chave “nome”, devem ser adicionados outros 4 campos referentes a cadastro de pessoas a livre escolha do candidato."
+			},
+			"response": []
+		}
+	]
+}
